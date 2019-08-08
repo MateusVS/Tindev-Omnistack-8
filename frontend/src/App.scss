@@ -1,0 +1,32 @@
+    $cinza: #f5f5f5;
+    $font-family: "Arial, Helvica, sans-serif";
+    * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        @extend html;
+        background: $cinza;
+        font: {
+            family: $font-family;
+        }
+    }
+    
+    #root {
+        @extend html;
+    }
+    
+    input {
+        @extend body;
+    }
+    
+    button {
+        @extend body;
+    }

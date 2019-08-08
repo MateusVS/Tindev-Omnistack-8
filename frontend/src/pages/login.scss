@@ -1,0 +1,39 @@
+$full: 100%;
+$cinza:#ddd;
+$dark:#666;
+$tinder:#df4723;
+.login-container {
+    height: $full;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        width: $full;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-top: 20px;
+            border: 1px solid $cinza;
+            border-radius: 4px;
+            height: 48px;
+            padding: 0 20px;
+            font-size: 16px;
+            color: $dark;
+            &::placeholder {
+                color: #999;
+            }
+        }
+        button {
+            margin-top: 10px;
+            border: 0;
+            border-radius: 4px;
+            height: 48px;
+            font-size: 16px;
+            background: $tinder;
+            font-weight: bold;
+            cursor: pointer;
+            color: #ffff;
+        }
+    }
+}
